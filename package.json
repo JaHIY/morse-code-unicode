@@ -1,0 +1,33 @@
+{
+  "name": "morse-code",
+  "version": "0.0.1",
+  "summary": "",
+  "description": "",
+  "author": {
+    "name": "JaHIY",
+    "url": "https://github.com/JaHIY"
+  },
+  "license": "MIT",
+  "main": "dist/morse-code.min.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --progress --colors --watch",
+    "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register --require babel-polyfill",
+    "test:cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require babel-register"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-env": "^1.1.8",
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "eslint-loader": "^1.6.1",
+    "istanbul": "1.1.0-alpha.1",
+    "mocha": "^3.2.0",
+    "webpack": "beta"
+  },
+  "dependencies": {
+    "ramda": "^0.23.0"
+  }
+}
