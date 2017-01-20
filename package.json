@@ -1,14 +1,14 @@
 {
   "name": "morse-code",
   "version": "0.0.1",
-  "summary": "",
-  "description": "",
+  "summary": "A javascript library for encode / decode morse code messages, unicode supported.",
+  "description": "A javascript library for encode / decode morse code messages, unicode supported.",
   "author": {
     "name": "JaHIY",
     "url": "https://github.com/JaHIY"
   },
   "license": "MIT",
-  "main": "dist/morse-code.min.js",
+  "main": "dist/main.bundle.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack --progress --colors --watch",
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register --require babel-polyfill",
