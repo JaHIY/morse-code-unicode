@@ -1,0 +1,7 @@
+{
+    "source": "./src",
+    "destination": "./doc",
+    "includeSource": true,
+    "coverage": true,
+    "lint": true
+}

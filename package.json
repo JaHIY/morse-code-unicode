@@ -11,7 +11,7 @@
   "main": "dist/main.bundle.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack --progress --colors --watch",
-    "doc": "./node_modules/.bin/esdoc",
+    "doc": "./node_modules/.bin/esdoc -c esdoc.json",
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register --require babel-polyfill",
     "test:cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require babel-register",
     "test:travis": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --require babel-register -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
