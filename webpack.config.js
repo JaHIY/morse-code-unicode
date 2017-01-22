@@ -29,24 +29,7 @@ const config = {
             },
             {
                 test: /\.js$/,
-                use: [
-                    {
-                        loader: "eslint-loader",
-                        options: {
-                            parserOptions: {
-                                ecmaVersion: 2017,
-                                sourceType: "module",
-                                ecmaFeatures: {
-                                    impliedStrict: true,
-                                    jsx: true,
-                                }
-                            },
-                            rules: {
-                                semi: 0
-                            },
-                        }
-                    }
-                ],
+                use: "eslint-loader",
                 exclude: /node_modules/,
                 enforce: "pre",
             },
