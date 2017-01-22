@@ -73,6 +73,32 @@ const defaultOptions = {
     long: "-"
 };
 
+/**
+ *  @since 0.0.1
+ *
+ *  Returns the morse code of message passed to the function.
+ *
+ *  @example <caption>ascii</caption>
+ *  encodeMorseCode("I have an apple.")
+ *
+ *  @example <caption>unicode</caption>
+ *  encodeMorseCode("もぎゅっと“love”で接近中！")
+ *
+ *  @example <caption>options</caption>
+ *  const options = {
+ *      long: "2",
+ *      short: "1",
+ *      delimiter: "0",
+ *  };
+ *  encodeMorseCode("爱してるばんざーい！", options);
+ *
+ *  @param {!string} msg - original message
+ *  @param {!Object} [options={}] - optional config
+ *  @param {!string} [options.long="-"] - the long signal in morse code
+ *  @param {!string} [options.short="."] - the short signal in morse code
+ *  @param {!string} [options.delimiter="/"] - the delimiter in morse code
+ *  @return {!string} morse code
+ */
 export function encodeMorseCode(
     msg,
     {
@@ -105,6 +131,32 @@ export function encodeMorseCode(
     )(msg);
 }
 
+/**
+ *  @since 0.0.1
+ *
+ *  Returns the original message of morse code passed to the function.
+ *
+ *  @example <caption>ascii</caption>
+ *  decodeMorseCode("../..../.-/...-/./.-/.--././-./.-.-.-")
+ *
+ *  @example <caption>unicode</caption>
+ *  decodeMorseCode("--....--.-----/--.....--.----/---..---../.----./.../../-.-./--.....--.---./--....--.-----")
+ *
+ *  @example <caption>options</caption>
+ *  const options = {
+ *      long: "2",
+ *      short: "1",
+ *      delimiter: "0",
+ *  };
+ *  decodeMorseCode("222112221101222210111", options);
+ *
+ *  @param {!string} morseCode - morse code
+ *  @param {!Object} [options={}] - optional config
+ *  @param {!string} [options.long="-"] - the long signal in morse code
+ *  @param {!string} [options.short="."] - the short signal in morse code
+ *  @param {!string} [options.delimiter="/"] - the delimiter in morse code
+ *  @return {!string} original code
+ */
 export function decodeMorseCode(
     morseCode,
     {

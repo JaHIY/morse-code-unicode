@@ -11,6 +11,7 @@
   "main": "dist/main.bundle.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack --progress --colors --watch",
+    "doc": "./node_modules/.bin/esdoc",
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register --require babel-polyfill",
     "test:cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require babel-register",
     "test:travis": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --require babel-register -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
@@ -23,6 +24,7 @@
     "babel-preset-env": "^1.1.8",
     "chai": "^3.5.0",
     "coveralls": "^2.11.15",
+    "esdoc": "^0.5.2",
     "eslint": "^3.13.1",
     "eslint-loader": "^1.6.1",
     "istanbul": "1.1.0-alpha.1",
