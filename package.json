@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "./node_modules/.bin/webpack --progress --colors --watch",
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register --require babel-polyfill",
-    "test:cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require babel-register"
+    "test:cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require babel-register",
+    "test:travis": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- --require babel-register -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -21,10 +22,12 @@
     "babel-polyfill": "^6.20.0",
     "babel-preset-env": "^1.1.8",
     "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
     "eslint": "^3.13.1",
     "eslint-loader": "^1.6.1",
     "istanbul": "1.1.0-alpha.1",
     "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
     "webpack": "beta"
   },
   "dependencies": {
