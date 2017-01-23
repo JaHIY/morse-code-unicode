@@ -1,11 +1,7 @@
 {
     "presets": [
-        ["env", {
-            "targets": {
-                "browsers": ["last 2 versions", "safari >= 7"]
-            },
-            "modules": "umd",
-            "useBuiltIns": true
+        ["es2015", {
+            "modules": "umd"
         }]
     ]
 }
