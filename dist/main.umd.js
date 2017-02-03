@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('ramda')) :
 	typeof define === 'function' && define.amd ? define(['exports', 'ramda'], factory) :
-	(factory((global['morse-code'] = global['morse-code'] || {}),global.R));
+	(factory((global['morse-code-unicode'] = global['morse-code-unicode'] || {}),global.R));
 }(this, (function (exports,R) { 'use strict';
 
 R = 'default' in R ? R['default'] : R;
