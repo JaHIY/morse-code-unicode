@@ -1,6 +1,6 @@
 {
     "name": "morse-code-unicode",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "summary": "A javascript library for encode / decode morse code messages, unicode supported.",
     "description": "A javascript library for encode / decode morse code messages, unicode supported.",
     "author": {
